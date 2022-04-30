@@ -1,0 +1,44 @@
+@import '../mainStyles/mainColors';
+.divider
+{
+    height: 1px;
+    border-top: 1px solid #ededf1
+}
+.cardEvent,
+.teachers h4 a
+{
+    color: $secondary-text-color;
+}
+.cardEvent a
+{
+    color: $main-color;
+}
+.cardEvent a,
+.news a
+{
+    color: $secondary-text-color;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cardEvent i
+{
+    color: $main-color;
+}
+.eventDate
+{
+    background-color: $main-color;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 30%;
+    padding: 10px;
+    position: absolute;
+}
+.teachers,
+.teachers a
+{
+    color: $main-text-color;
+}
+.teachers i
+{
+    padding: 0 5px;
+}

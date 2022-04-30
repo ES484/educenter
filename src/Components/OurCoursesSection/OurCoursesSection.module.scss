@@ -1,0 +1,13 @@
+@import '../mainStyles/mainColors';
+.divider
+{
+    height: 1px;
+    border-top: 1px solid #ededf1
+}
+.cardStyle,
+.dateAndTime a
+{
+    color: $secondary-text-color
+}
+
+

@@ -1,0 +1,26 @@
+.paragraphs {
+  color: #1e1e4b;
+  margin-top: -5% !important;
+  z-index: 5;
+  background-color: #F8F9FA;
+}
+
+.paragraphs div div div {
+  width: 75%;
+}
+
+.paragraphs h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.paragraphs p {
+  line-height: 1.9rem;
+}
+
+.paragraphs i {
+  color: #FFBC3B;
+  font-size: 3rem;
+  padding-bottom: 15px;
+}
+/*# sourceMappingURL=ParaIntro.module.css.map */

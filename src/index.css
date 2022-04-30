@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body
+{
+  font-family: 'Poppins', sans-serif;
+  height: 3500px;
+}
+a
+{
+  text-decoration: none;
+  transition: color .3s;
+}
+a:hover,
+h4 a:hover
+{
+  color:#FFBC3B;
+}
+*::selection
+{
+  background-color: #FFBC3B;
+  color: #fff;
+}
+.card
+{
+  transition: .5s;
+}
+.card:hover
+{
+  box-shadow: 0px 4px 25px 0px rgba(27, 39, 71, 0.15);
+}
+.carousel-indicators .active
+{
+    background-color: #FFBC3B;
+}
+.applyNowBtn,
+.learnMoreBtn,
+.seeAllBtn,
+.joinBtn,
+.readMore,
+.join
+{
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    transition: all .5s;
+}
+.applyNowBtn,
+.readMore,
+.join
+{
+    background-color: #FFBC3B;
+    color: #fff;
+    border: none;
+}
+.applyNowBtn:hover,
+.readMore:hover,
+.join:hover
+{
+  box-shadow: inset 0 7px 1px #FFBC3B,
+  inset 0 -7px 1px #FFBC3B;
+  background-color: #FFF;
+  color: #FFBC3B;
+}
+.learnMoreBtn,
+.seeAllBtn,
+.joinBtn
+{
+    background-color: #FFF !important;
+    color: #FFBC3B !important;
+    border: 1px solid #FFBC3B;
+}
+.learnMoreBtn:hover,
+.seeAllBtn:hover
+{
+  box-shadow: inset 2px 5px 1px #FFBC3B,
+  inset -2px -5px 1px #FFBC3B;
+}
+.joinBtn:hover
+{
+  box-shadow: inset 2px 5px 1px #FFF,
+  inset -2px -5px 1px #FFF;
+  background-color: #FFBC3B !important;
+  color: #FFF !important;
+}
+h2,
+h3,
+h4,
+h6
+{
+    font-weight: bolder;
+    text-transform: capitalize;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+

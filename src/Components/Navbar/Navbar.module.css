@@ -1,0 +1,50 @@
+nav {
+  z-index: 3;
+  position: absolute;
+}
+
+.mainNav {
+  background-color: #1A1A37;
+}
+
+.mainNav div:first-child {
+  width: 40%;
+}
+
+.navLinks {
+  background-color: #FFBC3B;
+}
+
+.navLinks ul li {
+  padding-right: 3%;
+}
+
+.navLinks ul li a {
+  color: #fff !important;
+  font-size: 1rem;
+}
+
+.navLinks ul li a::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: 65px;
+  height: 5px;
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.navLinks ul li a:hover::after {
+  opacity: 1;
+}
+
+button:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+/*# sourceMappingURL=Navbar.module.css.map */

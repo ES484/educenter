@@ -1,0 +1,43 @@
+.divider {
+  height: 1px;
+  border-top: 1px solid #ededf1;
+}
+
+.cardEvent,
+.teachers h4 a {
+  color: #1e1e4b;
+}
+
+.cardEvent a {
+  color: #FFBC3B;
+}
+
+.cardEvent a,
+.news a {
+  color: #1e1e4b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cardEvent i {
+  color: #FFBC3B;
+}
+
+.eventDate {
+  background-color: #FFBC3B;
+  color: #FFF;
+  text-transform: uppercase;
+  width: 30%;
+  padding: 10px;
+  position: absolute;
+}
+
+.teachers,
+.teachers a {
+  color: #5c5c77;
+}
+
+.teachers i {
+  padding: 0 5px;
+}
+/*# sourceMappingURL=EventTeacherNews.module.css.map */

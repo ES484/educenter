@@ -1,0 +1,16 @@
+.adventure {
+  background-color: #FFBC3B;
+  color: #FFF;
+  text-align: center;
+}
+
+.success {
+  background-image: url(../images/backgrounds/success-story.jpg);
+}
+
+.content {
+  color: #1e1e4b;
+  background-color: #FFF;
+  text-align: justify;
+}
+/*# sourceMappingURL=AdventureAndSuccessStories.module.css.map */

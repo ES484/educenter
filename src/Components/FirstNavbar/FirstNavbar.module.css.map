@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,EAAE,CAAC,EAAE,CACL;EACI,OAAO,EAAE,YAAY;EACrB,aAAa,EAAE,EAAE;CACpB;;AACD,AAAA,EAAE,CAAC,EAAE,CAAC,CAAC,CACP;EACI,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,MAAM;EACjB,cAAc,EAAE,SAAS;EACzB,KAAK,ECVS,OAAO;CDWxB;;AACD,AAAA,EAAE,CAAC,EAAE,CAAC,CAAC,AAAA,MAAM,CACb;EACI,MAAM,EAAE,OAAO;CAClB",
+    "sources": [
+        "FirstNavbar.module.scss",
+        "../mainStyles/_mainColors.scss"
+    ],
+    "names": [],
+    "file": "FirstNavbar.module.css"
+}

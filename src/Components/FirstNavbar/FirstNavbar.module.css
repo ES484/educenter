@@ -1,0 +1,16 @@
+ul li {
+  display: inline-block;
+  padding-right: 8%;
+}
+
+ul li a {
+  font-weight: bolder;
+  font-size: .75rem;
+  text-transform: uppercase;
+  color: #5c5c77;
+}
+
+ul li a:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=FirstNavbar.module.css.map */

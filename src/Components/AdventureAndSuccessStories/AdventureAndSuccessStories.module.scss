@@ -1,0 +1,17 @@
+@import '../mainStyles/mainColors';
+.adventure
+{
+    background-color: $main-color;
+    color: #FFF;
+    text-align: center;
+}
+.success
+{
+    background-image: url(../images/backgrounds/success-story.jpg);
+}
+.content
+{
+    color: $secondary-text-color;
+    background-color: #FFF;
+    text-align: justify;
+}

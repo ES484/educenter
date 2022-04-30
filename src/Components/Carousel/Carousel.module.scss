@@ -1,0 +1,65 @@
+@import "../mainStyles/mainColors";
+.overlay
+{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #1a1a37;
+    opacity: .8;
+}
+.carouselIndicatiors
+{
+    position: absolute;
+    bottom: 15% !important;
+    margin-left: 3% !important;
+}
+.carouselIndicatiors [data-bs-target]
+{
+    width: 10px !important;
+    height: 10px !important;
+    border: none !important;
+}
+
+.carouselCaption
+{
+    position: absolute;
+    z-index: 2;
+    text-align: left !important;
+    left: 3% !important;
+    bottom: 25% !important;
+    width: 60%;
+
+}
+.carouselCaption h3
+{
+    font-size: 3.5rem;
+}
+.itemsContainer > div
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.itemsContainer .firstCarousel
+{
+    background-image: url('../images/banner/banner-1.jpg');
+}
+.itemsContainer .secondCarousel
+{
+    background-image: url('../images/courses/course-6.jpg');
+}
+.itemsContainer .thirdCarousel
+{
+    background-image: url('../images/events/event-2.jpg');
+}
+
+.prevBtn, .nextBtn
+{
+    top: 65% !important;
+}
+.prevBtn
+{
+    left: 75% !important;
+}
