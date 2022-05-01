@@ -11,6 +11,22 @@ import post2 from '../images/blog/post-2.jpg';
 import post3 from '../images/blog/post-3.jpg';
 import {Link} from 'react-router-dom';
 function EventTeacherNews() {
+    const eventsData = [
+        {imgUrl: event1, eventDate: 18},
+        {imgUrl: event2, eventDate: 21},
+        {imgUrl: event3, eventDate: 23},
+    ];
+    const teachersData = [
+        {imgUrl: teacher1, name: "jacke masito"},
+        {imgUrl: teacher2, name: "clark malik<"},
+        {imgUrl: teacher3, name: "john doe"}
+    ];
+    const newsData = [
+        {imgUrl: post1, date: "August 28, 2018", author: "By Somrat Sorkar"},
+        {imgUrl: post2, date: "August 13, 2018", author: "By Jonathon Drew"},
+        {imgUrl: post3, date: "August 24, 2018", author: "By Alex Pitt"}
+    ]
+
   return (
     <React.Fragment>
         <div className='bg-light py-5'>
@@ -31,9 +47,9 @@ function EventTeacherNews() {
                         </div>
                 </div>
                 <div className="row gy-5">
-                    <div className="col-lg-4 col-md-6 col-sm-12">
+                    {eventsData.map((eventData, idx)=> <div className="col-lg-4 col-md-6 col-sm-12" key={idx}>
                         <div className={`card ${styles.cardEvent} border-0`}>
-                            <img src={event1} className="card-img-top" alt="event1_image"/>
+                            <img src={eventData.imgUrl} className="card-img-top" alt="event1_image"/>
                             <div className="card-body">
                                 <i className="fa-solid fa-location-dot pe-2"></i>
                                 <span className='text-capitalize'>dhanmondi lake, dhaka</span>
@@ -42,43 +58,11 @@ function EventTeacherNews() {
                                 </h5>
                             </div>
                             <div className={styles.eventDate}>
-                                <h2>18</h2>
+                                <h2>{eventData.eventDate}</h2>
                                 <h6>december</h6>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12">
-                        <div className={`card ${styles.cardEvent} border-0`}>
-                            <img src={event2} className="card-img-top" alt="event2_image"/>
-                            <div className="card-body">
-                                <i className="fa-solid fa-location-dot pe-2"></i>
-                                <span className='text-capitalize'>dhanmondi lake, dhaka</span>
-                                <h5 className='py-3'>
-                                    <Link to="">Lorem ipsum dolor amet, consectetur adipisicing.</Link>
-                                </h5>
-                            </div>
-                            <div className={styles.eventDate}>
-                                <h2>21</h2>
-                                <h6>december</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12">
-                        <div className={`card ${styles.cardEvent} border-0`}>
-                            <img src={event3} className="card-img-top" alt="event3_image"/>
-                            <div className="card-body">
-                                <i className="fa-solid fa-location-dot pe-2"></i>
-                                <span className='text-capitalize'>dhanmondi lake, dhaka</span>
-                                <h5 className='py-3'>
-                                    <Link to="">Lorem ipsum dolor amet, consectetur adipisicing.</Link>
-                                </h5>
-                            </div>
-                            <div className={styles.eventDate}>
-                                <h2>23</h2>
-                                <h6>december</h6>
-                            </div>
-                        </div>
-                    </div>
+                    </div>)}
                 </div>
             </div>
         </div>
@@ -92,13 +76,13 @@ function EventTeacherNews() {
                     </div>
                 </div>
                 <div className="row gy-5">
-                    <div className="col-md-4">
+                    {teachersData.map((teacherData, idx)=> <div className="col-md-4"  key={idx}>
                         <div className={styles.teachers}>
                             <div className="card border-0">
-                                <img src={teacher1} className="card-img-top" alt="teacher1"/>
+                                <img src={teacherData.imgUrl} className="card-img-top" alt="teacher1"/>
                                 <div className="card-body">
                                     <h4>
-                                        <Link to="">jacke masito</Link>
+                                        <Link to="">{teacherData.name}</Link>
                                     </h4>
                                     <h6>teacher</h6>
                                     <div>
@@ -118,61 +102,7 @@ function EventTeacherNews() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-md-4">
-                        <div className={styles.teachers}>
-                            <div className="card border-0">
-                                <img src={teacher2} className="card-img-top" alt="teacher2"/>
-                                <div className="card-body">
-                                    <h4>
-                                        <Link to="">clark malik</Link>
-                                    </h4>
-                                    <h6>teacher</h6>
-                                    <div>
-                                        <a href="https://www.facebook.com/themefisher">
-                                            <i className="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                        <a href="https://twitter.com/themefisher">
-                                            <i className="fa-brands fa-twitter"></i>
-                                        </a>
-                                        <a href="https://github.com/themefisher">
-                                            <i className="fa-brands fa-github-alt"></i>
-                                        </a>
-                                        <a href="https://www.instagram.com/themefisher/">
-                                            <i className="fa-brands fa-instagram"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-4">
-                        <div className={styles.teachers}>
-                            <div className="card border-0">
-                                <img src={teacher3} className="card-img-top" alt="teacher3"/>
-                                <div className="card-body">
-                                    <h4>
-                                        <Link to="">john doe</Link>
-                                    </h4>
-                                    <h6>teacher</h6>
-                                    <div>
-                                        <a href="https://www.facebook.com/themefisher">
-                                            <i className="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                        <a href="https://twitter.com/themefisher">
-                                            <i className="fa-brands fa-twitter"></i>
-                                        </a>
-                                        <a href="https://github.com/themefisher">
-                                            <i className="fa-brands fa-github-alt"></i>
-                                        </a>
-                                        <a href="https://www.instagram.com/themefisher/">
-                                            <i className="fa-brands fa-instagram"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div>)}
                 </div>
                 <div className="row py-5">
                     <div className="col-md-12">
@@ -182,13 +112,13 @@ function EventTeacherNews() {
                     </div>
                 </div>
                 <div className="row gy-5 py-5">
-                    <div className="col-md-4">
+                    {newsData.map((newData, idx)=><div className="col-md-4" key={idx}>
                         <div className={styles.news}>
                             <div className="card border-0 border-bottom">
-                                <img src={post1} className="card-img-top" alt="post1"/>
+                                <img src={newData.imgUrl} className="card-img-top" alt="post1"/>
                                 <div className="card-body">
-                                    <span className='pe-5'>August 28, 2018</span>
-                                    <span>By Somrat Sorkar</span>
+                                    <span className='pe-5'>{newData.date}</span>
+                                    <span>{newData.author}</span>
                                     <h5 className='py-3'>
                                         <Link to="">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</Link>
                                     </h5>
@@ -197,39 +127,7 @@ function EventTeacherNews() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-md-4">
-                        <div className={styles.news}>
-                            <div className="card border-0 border-bottom">
-                                <img src={post2} className="card-img-top" alt="post2"/>
-                                <div className="card-body">
-                                    <span className='pe-5'>August 13, 2018</span>
-                                    <span>By Jonathon Drew</span>
-                                    <h5 className='py-3'>
-                                        <Link to="">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</Link>
-                                    </h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-                                    <button className='readMore'>read more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-4">
-                        <div className={styles.news}>
-                            <div className="card border-0 border-bottom">
-                                <img src={post3} className="card-img-top" alt="post3"/>
-                                <div className="card-body">
-                                    <span className='pe-5'>August 24, 2018</span>
-                                    <span>By Alex Pitt</span>
-                                    <h5 className='py-3'>
-                                        <Link to="">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</Link>
-                                    </h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-                                    <button className='readMore'>read more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div>)}
                 </div>
             </div>
         </div>

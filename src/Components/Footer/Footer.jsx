@@ -4,6 +4,12 @@ import {Link} from 'react-router-dom';
 import logo from '../images/logo.png';
 
 function Footer() {
+    const linksData = [
+        {title: "company", link1: "about us", link2: "our teacher", link3: "contact", link4: "blog"},
+        {title: "links", link1: "courses", link2: "events", link3: "notice", link4: "scholarship"},
+        {title: "support", link1: "forums", link2: "documentation", link3: "language", link4: "release status"},
+        {title: "recommend", link1: "wordpress", link2: "learnpress", link3: "wooCommerce", link4: "bbpress"},
+    ]
   return (
     <React.Fragment>
         <div className={`container-fluid p-0 ${styles.footer}`}>
@@ -34,83 +40,25 @@ function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-2 col-sm-6 col-xs-12">
+                    {linksData.map((linkData)=> <div className="col-lg-2 col-sm-6 col-xs-12">
                         <div className='px-5'>
-                            <h4>company</h4>
+                            <h4>{linkData.title}</h4>
                             <ul className='list-unstyled'>
                                 <li>
-                                    <Link to="">about us</Link>
+                                    <Link to="">{linkData.link1}</Link>
                                 </li>
                                 <li>
-                                    <Link to="">our teacher</Link>
+                                    <Link to="">{linkData.link2}</Link>
                                 </li>
                                 <li>
-                                    <Link to="">contact</Link>
+                                    <Link to="">{linkData.link3}</Link>
                                 </li>
                                 <li>
-                                    <Link to="">blog</Link>
+                                    <Link to="">{linkData.link4}</Link>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div className="col-lg-2 col-sm-6 col-xs-12">
-                        <div className='px-5'>
-                            <h4>links</h4>
-                            <ul className='list-unstyled'>
-                                <li> 
-                                    <Link to="">courses</Link>
-                                </li>
-                                <li>
-                                    <Link to="">events</Link>
-                                </li>
-                                <li>
-                                    <Link to="">notice</Link>
-                                </li>
-                                <li>
-                                    <Link to="">scholarship</Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-2 col-sm-6 col-xs-12">
-                        <div className='px-5'>
-                            <h4>support</h4>
-                            <ul className='list-unstyled'>
-                                <li>
-                                    <Link to="">forums</Link>
-                                </li>
-                                <li>
-                                    <Link to="">documentation</Link>
-                                </li>
-                                <li>
-                                    <Link to="">language</Link>
-                                </li>
-                                <li>
-                                    <Link to="">release status</Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-2 col-sm-6 col-xs-12">
-                        <div className='px-5'>
-                            <h4>recommend</h4>
-                            <ul className='list-unstyled'>
-                                <li> 
-                                    <Link to="">wordpress</Link>
-                                </li>
-                                <li>
-                                    <Link to="">learnpress</Link>
-                                    </li>
-                                <li> 
-                                    <Link to="">wooCommerce</Link>
-                                </li>
-                                <li>
-                                    <Link to="">bbpress</Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    
+                    </div>)}
                 </div>
                 <div className="row">
                     <div className="col-md-6 col-sm-12">
