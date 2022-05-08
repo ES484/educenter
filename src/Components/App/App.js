@@ -17,7 +17,6 @@ import Login from './../Login/Login';
 import { Routes, Route, Navigate, useNavigate} from 'react-router-dom';
 import Contact from './../Contact/Contact';
 import Teachers from './../Teachers/Teachers';
-import AboutEduSection from './../AboutEduSection/AboutEduSection';
 function App() {
   const[userData, setUserData]= useState(null);
   let navigate= useNavigate();
@@ -55,7 +54,7 @@ function App() {
       <FirstNavbar userData={userData} logOut={logOut}/>
       <Carousel userData={userData}/>
     <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route path='/' element={<Login/>}/>
       <Route path='home' element={<ProtectedRoute><Home/></ProtectedRoute>}/>
       <Route path='notice' element={<Notice/>}/>
       <Route path='research' element={<Research/>}/>
@@ -66,8 +65,6 @@ function App() {
       <Route path='news' element={<ProtectedRoute><News/></ProtectedRoute>}/>
       <Route path='contact' element={<ProtectedRoute><Contact/></ProtectedRoute>}/>
       <Route path='teachers' element={<ProtectedRoute><Teachers/></ProtectedRoute>}/>
-      <Route path='aboutEduSection' element={<ProtectedRoute><AboutEduSection/></ProtectedRoute>}/>
-
       <Route path='register' element={<Register/>}/>
       <Route path='login' element={<Login getUserData={getUserData}/>}/>
     </Routes>
