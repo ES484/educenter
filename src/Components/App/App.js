@@ -51,9 +51,9 @@ function App() {
   }
   return (
     <>
+    <Routes>
       <FirstNavbar userData={userData} logOut={logOut}/>
       <Carousel userData={userData}/>
-    <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='home' element={<ProtectedRoute><Home/></ProtectedRoute>}/>
       <Route path='notice' element={<Notice/>}/>
@@ -67,8 +67,8 @@ function App() {
       <Route path='teachers' element={<ProtectedRoute><Teachers/></ProtectedRoute>}/>
       <Route path='register' element={<Register/>}/>
       <Route path='login' element={<Login getUserData={getUserData}/>}/>
+      <Footer userData={userData}/>
     </Routes>
-    <Footer/>
     </>
   );
 }
