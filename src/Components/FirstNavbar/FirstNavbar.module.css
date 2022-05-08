@@ -3,14 +3,16 @@ ul li {
   padding-right: 8%;
 }
 
-ul li a {
+ul li a,
+ul li span {
   font-weight: bolder;
   font-size: .75rem;
   text-transform: uppercase;
   color: #5c5c77;
 }
 
-ul li a:hover {
+ul li a:hover,
+ul li span:hover {
   cursor: pointer;
 }
 /*# sourceMappingURL=FirstNavbar.module.css.map */

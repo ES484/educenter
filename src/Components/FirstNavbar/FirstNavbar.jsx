@@ -1,7 +1,19 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './FirstNavbar.module.css';
-function NavAndHeader() {
+function FirstNavbar(props) {
+  const socialLinks = [
+    {link: "tel:+443003030266", icons: ""}, 
+    {link: "https://facebook.com/themefisher", icons: "fa-brands fa-facebook-f"},
+    {link: "https://twitter.com/themefisher", icons: "fa-brands fa-twitter"}, 
+    {link: "https://github.com/themefisher", icons: "fa-brands fa-github-alt"},
+    {link: "https://instagram.com/themefisher", icons: "fa-brands fa-instagram"}
+  ]
+  const otherLinks = [
+    {link: "notice"},
+    {link: "research"},
+    {link: "scholarship"}
+  ]
   return (
     <React.Fragment>
               <div className='container'>
@@ -9,50 +21,33 @@ function NavAndHeader() {
                   <div className='col-lg-4 col-md-12'>
                     <div>
                       <ul className='list-unstyled'>
-                        <li>
-                          <a href="tel:+443003030266">call +44 300 303 0266</a>
-                        </li>
-                        <li>
-                          <a href="https://facebook.com/themefisher">
-                            <i className="fa-brands fa-facebook-f"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://twitter.com/themefisher">
-                            <i className="fa-brands fa-twitter"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://github.com/themefisher">
-                            <i className="fa-brands fa-github-alt"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://instagram.com/themefisher/">
-                            <i className="fa-brands fa-instagram"></i>
-                          </a>
-                        </li>
+                        {socialLinks.map((aLink, idx)=>
+                        <li key={idx}>
+                        <a href={aLink.link} target="_blank" rel="noopener noreferrer">
+                          <i className={aLink.icons}></i>
+                        </a>
+                      </li>)}
                       </ul>
                     </div>
                   </div>
                   <div  className='col-lg-5 col-md-12'>
                     <div>
                       <ul className='list-unstyled'>
+                        {props.userData? <>
+                          {otherLinks.map((otherLink, idx)=>
+                          <li key={idx}>
+                            <Link to={otherLink.link}>{otherLink.link}</Link>
+                          </li>)}
+                          <li className="nav-item">
+                            <span onClick={props.logOut}>Logout</span>
+                          </li>
+                          </>: <>
                           <li>
-                            <Link to="">notice</Link>
+                            <Link to="login">login</Link>
                           </li>
                           <li>
-                            <Link to="">research</Link>
-                          </li>
-                          <li>
-                            <Link to="">scholarship</Link>
-                          </li>
-                          <li>
-                            <Link to="">login</Link>
-                          </li>
-                          <li>
-                            <Link to="">register</Link>
-                          </li>
+                            <Link to="register">register</Link>
+                          </li></>}
                         </ul>
                     </div>
                   </div>
@@ -62,4 +57,4 @@ function NavAndHeader() {
   )
 }
 
-export default NavAndHeader;
+export default FirstNavbar;

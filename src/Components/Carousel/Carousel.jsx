@@ -1,9 +1,67 @@
 import React from 'react';
 import styles from './Carousel.module.css';
 import Navbar from './../Navbar/Navbar';
-function Carousel() {
+import {useLocation} from 'react-router-dom';
+import NoticeCaption from '../Notice/NoticeCaption';
+import HomeCaption from './../Home/HomeCaption';
+import ResearchCaption from './../Research/ResearchCaption';
+import ScholarshipCaption from './../Scholarship/ScholarshipCaption';
+import AboutCaption from '../About/AboutCaption';
+import CoursesCaption from './../Courses/CoursesCaption';
+import EventsCaption from './../Events/EventsCaption';
+import NewsCaption from './../News/NewsCaption';
+import ContactCaption from './../Contact/ContactCaption';
+
+function Carousel(props) {
+    const location = useLocation();
+    const fixedCaption = <div className="d-inline-block">
+        <h2>Home</h2> 
+        <i className="fa-solid fa-angle-right px-2 fs-2"></i>
+    </div>
+   function changeCaption() {
+    switch (location.pathname) {
+        case "/home":
+           return <div><HomeCaption/></div>
+        case "/":
+           return <div><HomeCaption/></div>
+        case "/notice":
+            return <div>
+                   {fixedCaption} <NoticeCaption/>
+                </div>
+        case "/research":
+            return <div>
+            {fixedCaption} <ResearchCaption/>
+         </div>
+         case "/scholarship":
+            return <div>
+            {fixedCaption} <ScholarshipCaption/>
+         </div>
+         case "/about":
+            return <div>
+            {fixedCaption} <AboutCaption/>
+         </div>
+         case "/courses":
+            return <div>
+            {fixedCaption} <CoursesCaption/>
+         </div>
+         case "/events":
+            return <div>
+            {fixedCaption} <EventsCaption/>
+         </div>
+         case "/news":
+            return <div>
+            {fixedCaption} <NewsCaption/>
+         </div>
+         case "/contact":
+            return <div>
+            {fixedCaption} <ContactCaption/>
+         </div>
+        default:
+            return ""
+    }
+   }
   return (
-    <React.Fragment>
+     <React.Fragment>{props.userData?<div>
         <Navbar/>
         <div id="carouselExampleCaptions" className={`carousel slide vh-100`} data-bs-ride="carousel">
             <div className={styles.overlay}></div>
@@ -15,26 +73,20 @@ function Carousel() {
             <div className={`${styles.itemsContainer} carousel-inner h-100`}>
                 <div className={`carousel-item active h-100 ${styles.firstCarousel}`}>
                 <div className={`${styles.carouselCaption} carousel-caption`}>
-                    <h3>Your bright future is our mission</h3>
-                    <p className='text-muted'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus vero earum nobis in accusantium unde sapiente! Corrupti enim ut labore quidem sequi! Accusamus beatae minus asperiores eos tenetur fugit velit!</p>
-                    <button className="applyNowBtn">Apply Now</button>
+                    {changeCaption()}
                 </div>
                 </div>
                 <div className={`carousel-item h-100 ${styles.secondCarousel}`}>
                 <div className={`${styles.carouselCaption} carousel-caption`}>
-                    <h3>Your bright future is our mission</h3>
-                    <p className='text-muted'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus vero earum nobis in accusantium unde sapiente! Corrupti enim ut labore quidem sequi! Accusamus beatae minus asperiores eos tenetur fugit velit!</p>
-                    <button className="applyNowBtn">Apply Now</button>
+                {changeCaption()}
                 </div>
                 </div>
                 <div className={`carousel-item h-100 ${styles.thirdCarousel}`}>
                 <div className={`${styles.carouselCaption} carousel-caption`}>
-                    <h3>Your bright future is our mission</h3>
-                    <p className='text-muted'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus vero earum nobis in accusantium unde sapiente! Corrupti enim ut labore quidem sequi! Accusamus beatae minus asperiores eos tenetur fugit velit!</p>
-                    <button className="applyNowBtn">Apply Now</button>
+                {changeCaption()}
                 </div>
                 </div>
-            </div>
+        </div>
             <button className={`carousel-control-prev ${styles.prevBtn}`} type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
@@ -43,7 +95,7 @@ function Carousel() {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
-        </div>
+        </div></div>:''}
     </React.Fragment>
   )
 }

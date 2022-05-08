@@ -1,0 +1,31 @@
+.scholarshipMainPart {
+  color: #5c5c77;
+  line-height: 1.8rem;
+}
+
+.scholarshipMainPart h2 {
+  color: #1e1e4b;
+}
+
+.scholarshipItemCard ul {
+  position: relative;
+}
+
+.scholarshipItemCard ul li {
+  display: list-item;
+}
+
+.scholarshipItemCard ul li::marker {
+  font-size: 2rem;
+  color: #FFBC3B;
+}
+
+.scholarshipItemCard {
+  color: #5c5c77;
+}
+
+.scholarshipItemCard h4 {
+  color: #1e1e4b;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=Scholarship.module.css.map */

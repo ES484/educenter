@@ -3,8 +3,7 @@
   border-top: 1px solid #ededf1;
 }
 
-.cardEvent,
-.teachers h4 a {
+.cardEvent {
   color: #1e1e4b;
 }
 
@@ -12,8 +11,7 @@
   color: #FFBC3B;
 }
 
-.cardEvent a,
-.news a {
+.cardEvent a {
   color: #1e1e4b;
   text-decoration: none;
   font-weight: bold;
@@ -31,13 +29,4 @@
   padding: 10px;
   position: absolute;
 }
-
-.teachers,
-.teachers a {
-  color: #5c5c77;
-}
-
-.teachers i {
-  padding: 0 5px;
-}
-/*# sourceMappingURL=EventTeacherNews.module.css.map */
+/*# sourceMappingURL=Events.module.css.map */

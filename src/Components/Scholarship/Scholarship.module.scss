@@ -1,0 +1,34 @@
+@import '../mainStyles/mainColors';
+.scholarshipMainPart
+{
+    color: $main-text-color;
+    line-height: 1.8rem;
+}
+.scholarshipMainPart h2
+{
+    color: $secondary-text-color;
+}
+.scholarshipItemCard ul
+{
+    position: relative;
+}
+.scholarshipItemCard ul li
+{
+    display: list-item
+}
+.scholarshipItemCard ul li::marker
+{
+    font-size: 2rem;
+    color: $main-color;
+}
+.scholarshipItemCard
+{
+    color: $main-text-color
+}
+.scholarshipItemCard h4
+{
+    color: $secondary-text-color;
+    text-transform: uppercase;
+}
+
+

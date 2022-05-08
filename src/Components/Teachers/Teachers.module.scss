@@ -1,0 +1,14 @@
+@import '../mainStyles/mainColors';
+.teachers,
+.teachers a
+{
+    color: $main-text-color;
+}
+.teachers i
+{
+    padding: 0 5px;
+}
+.teachers h4 a
+{
+    color: $secondary-text-color;
+}

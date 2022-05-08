@@ -1,0 +1,36 @@
+.contactContent h2 {
+  color: #1e1e4b;
+}
+
+.contactContent p {
+  line-height: 2rem;
+  color: #5c5c77;
+}
+
+.contactContent a {
+  color: #5c5c77;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.contactContent a,
+.contactContent span {
+  display: block;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+}
+
+.mapouter,
+.gmap_canvas,
+.gmap_canvas iframe {
+  height: 500px;
+}
+/*# sourceMappingURL=Contact.module.css.map */

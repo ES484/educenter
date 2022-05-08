@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AACA,AAAA,QAAQ,CACR;EACI,MAAM,EAAE,GAAG;EACX,UAAU,EAAE,iBAChB;CAAC;;AACD,AAAA,UAAU;AACV,YAAY,CAAC,CAAC,CACd;EACI,KAAK,ECPc,OAAO;CDQ7B",
+    "mappings": "AACA,AAAA,QAAQ,CACR;EACI,MAAM,EAAE,GAAG;EACX,UAAU,EAAE,iBAChB;CAAC",
     "sources": [
         "OurCoursesSection.module.scss",
         "../mainStyles/_mainColors.scss"

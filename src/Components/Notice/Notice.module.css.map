@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,WAAW,CACX;EACI,gBAAgB,ECHP,OAAO;CDInB;;AACD,AAAA,cAAc,CAAC,CAAC;AAChB,cAAc,CAAC,CAAC,CAChB;EACI,KAAK,ECPS,OAAO;CDQxB;;AACD,AAAA,cAAc,CAAC,CAAC,CAChB;EACI,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,IAAI;CACpB",
+    "sources": [
+        "Notice.module.scss",
+        "../mainStyles/_mainColors.scss"
+    ],
+    "names": [],
+    "file": "Notice.module.css"
+}

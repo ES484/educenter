@@ -2,9 +2,9 @@
     "version": 3,
     "mappings": "AACA,AAAA,UAAU,CACV;EACI,gBAAgB,ECHP,OAAO;EDIhB,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,MAAM;CACrB;;AACD,AAAA,QAAQ,CACR;EACI,gBAAgB,EAAE,4CAA4C;CACjE;;AACD,AAAA,QAAQ,CACR;EACI,KAAK,ECXc,OAAO;EDY1B,gBAAgB,EAAE,IAAI;EACtB,UAAU,EAAE,OAAO;CACtB",
     "sources": [
-        "AdventureAndSuccessStories.module.scss",
+        "Success.module.scss",
         "../mainStyles/_mainColors.scss"
     ],
     "names": [],
-    "file": "AdventureAndSuccessStories.module.css"
+    "file": "Success.module.css"
 }

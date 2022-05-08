@@ -4,8 +4,7 @@
     height: 1px;
     border-top: 1px solid #ededf1
 }
-.cardEvent,
-.teachers h4 a
+.cardEvent
 {
     color: $secondary-text-color;
 }
@@ -13,8 +12,7 @@
 {
     color: $main-color;
 }
-.cardEvent a,
-.news a
+.cardEvent a
 {
     color: $secondary-text-color;
     text-decoration: none;
@@ -32,13 +30,4 @@
     width: 30%;
     padding: 10px;
     position: absolute;
-}
-.teachers,
-.teachers a
-{
-    color: $main-text-color;
-}
-.teachers i
-{
-    padding: 0 5px;
 }

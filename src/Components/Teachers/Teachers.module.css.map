@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,SAAS;AACT,SAAS,CAAC,CAAC,CACX;EACI,KAAK,ECHS,OAAO;CDIxB;;AACD,AAAA,SAAS,CAAC,CAAC,CACX;EACI,OAAO,EAAE,KAAK;CACjB;;AACD,AAAA,SAAS,CAAC,EAAE,CAAC,CAAC,CACd;EACI,KAAK,ECVc,OAAO;CDW7B",
+    "sources": [
+        "Teachers.module.scss",
+        "../mainStyles/_mainColors.scss"
+    ],
+    "names": [],
+    "file": "Teachers.module.css"
+}

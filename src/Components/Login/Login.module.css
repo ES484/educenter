@@ -1,0 +1,12 @@
+.register,
+.login {
+  color: #1e1e4b;
+  margin-left: 20px;
+}
+
+.registerForm label,
+.loginForm label {
+  font-size: 1.5rem;
+  color: #5c5c77;
+}
+/*# sourceMappingURL=Login.module.css.map */

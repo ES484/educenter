@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,UAAU,CACV;EACI,gBAAgB,ECHP,OAAO;EDIhB,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "Adventure.module.scss",
+        "../mainStyles/_mainColors.scss"
+    ],
+    "names": [],
+    "file": "Adventure.module.css"
+}

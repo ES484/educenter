@@ -1,0 +1,15 @@
+@import '../mainStyles/mainColors';
+.noticeDate
+{
+    background-color: $main-color;
+}
+.noticeContent p, 
+.noticeContent a
+{
+    color: $main-text-color;
+}
+.noticeContent a
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+}

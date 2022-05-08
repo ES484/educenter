@@ -1,0 +1,13 @@
+@import "../mainStyles/mainColors";
+.register,
+.login
+{
+    color: $secondary-text-color;
+    margin-left: 20px;
+}
+.registerForm label,
+.loginForm label
+{
+    font-size: 1.5rem;
+    color: $main-text-color;
+}

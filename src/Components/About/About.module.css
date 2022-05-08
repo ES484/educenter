@@ -1,0 +1,21 @@
+.aboutUsContent h2 {
+  color: #1e1e4b;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.aboutUsContent p {
+  color: #5c5c77;
+}
+
+.counter {
+  background-color: #FFBC3B;
+  color: #FFF;
+  text-align: center;
+}
+
+.counter h5 {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=About.module.css.map */

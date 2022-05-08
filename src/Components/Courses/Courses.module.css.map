@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,UAAU;AACV,YAAY,CAAC,CAAC,CACd;EACI,KAAK,ECFc,OAAO;CDG7B",
+    "sources": [
+        "Courses.module.scss",
+        "../mainStyles/_mainColors.scss"
+    ],
+    "names": [],
+    "file": "Courses.module.css"
+}

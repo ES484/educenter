@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,SAAS;AACT,MAAM,CACN;EACI,KAAK,ECFc,OAAO;EDG1B,WAAW,EAAE,IAAI;CACpB;;AACD,AAAA,aAAa,CAAC,KAAK;AACnB,UAAU,CAAC,KAAK,CAChB;EACI,SAAS,EAAE,MAAM;EACjB,KAAK,ECVS,OAAO;CDWxB",
+    "sources": [
+        "Login.module.scss",
+        "../mainStyles/_mainColors.scss"
+    ],
+    "names": [],
+    "file": "Login.module.css"
+}

@@ -1,14 +1,9 @@
 import React from 'react';
-import styles from './AdventureAndSuccessStories.module.css'
+import styles from './Success.module.css'
 
-function AdventureAndSuccessStories() {
+function Success() {
   return (
     <React.Fragment>
-        <div className={`${styles.adventure} py-5`}>
-            <h5>Click to Join the Advance Workshop</h5>
-            <h2 className='pt-2 pb-4'>Training In Advannce Networking</h2>
-            <button className='border-0 joinBtn'>join now</button>
-        </div>
         <div className={styles.success}>
             <div className="container p-5">
                 <div className="row">
@@ -26,4 +21,4 @@ function AdventureAndSuccessStories() {
   )
 }
 
-export default AdventureAndSuccessStories
+export default Success

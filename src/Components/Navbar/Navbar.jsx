@@ -20,7 +20,7 @@ function Navbar() {
          <nav className="navbar navbar-expand-lg navbar-dark m-0 p-0" id="navMain">
                 <div className={`${styles.mainNav} p-0 container-fluid align-items-lg-stretch w-100`}>
                   <div className="ps-5 py-3">
-                    <Link className="navbar-brand" to="">
+                    <Link className="navbar-brand" to="home">
                       <img src={logo} alt="logo" />
                     </Link>
                   </div>
@@ -30,20 +30,23 @@ function Navbar() {
                   <div className={`collapse navbar-collapse ${styles.navLinks}`} id="navbarSupportedContent">
                     <ul className="navbar-nav px-5 mb-lg-0 text-center">
                       <li className="nav-item">
-                        <Link className="nav-link" aria-current="page" to="#">Home</Link>
+                        <Link className="nav-link" aria-current="page" to="home">Home</Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" to="#">courses</Link>
+                        <Link className="nav-link" to="about">about</Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" to="#">events</Link>
+                        <Link className="nav-link" to="courses">courses</Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" to="#">blog</Link>
+                        <Link className="nav-link" to="events">events</Link>
                       </li>
                       <li className="nav-item">
+                        <Link className="nav-link" to="news">blog</Link>
+                      </li>
+                      {/* <li className="nav-item">
                         <Link className="nav-link" to="#">pages</Link>
-                      </li>
+                      </li> */}
                       <li className="nav-item">
                         <Link className="nav-link" to="#">contact</Link>
                       </li>

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,aAAa,CAAC,EAAE,CAChB;EACE,KAAK,ECDgB,OAAO;CDE7B;;AACD,AAAA,aAAa,CAAC,CAAC,CACf;EACI,KAAK,ECNS,OAAO;CDOxB",
+    "sources": [
+        "Research.module.scss",
+        "../mainStyles/_mainColors.scss"
+    ],
+    "names": [],
+    "file": "Research.module.css"
+}

@@ -1,0 +1,14 @@
+.noticeDate {
+  background-color: #FFBC3B;
+}
+
+.noticeContent p,
+.noticeContent a {
+  color: #5c5c77;
+}
+
+.noticeContent a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=Notice.module.css.map */

@@ -1,23 +1,24 @@
 import React from 'react';
-import FirstNavbar from '../FirstNavbar/FirstNavbar';
-import Carousel from '../Carousel/Carousel';
 import ParaIntro from '../ParaIntro/ParaIntro';
 import AboutEduSection from './../AboutEduSection/AboutEduSection';
 import OurCoursesSection from './../OurCoursesSection/OurCoursesSection';
-import AdventureAndSuccessStories from '../AdventureAndSuccessStories/AdventureAndSuccessStories';
-import EventTeacherNews from './../EventTeacherNews/EventTeacherNews';
-import Footer from './../Footer/Footer';
+import Adventure from './../Adventure/Adventure';
+import Success from './../Success/Success';
+import Teachers from './../Teachers/Teachers';
+import EventSection from './../Events/EventSection';
+import NewsSection from './../News/NewsSection';
+
 function Home() {
   return (
     <React.Fragment>
-        <FirstNavbar/>
-        <Carousel/>
         <ParaIntro/>
         <AboutEduSection/>
         <OurCoursesSection/>
-        <AdventureAndSuccessStories/>
-        <EventTeacherNews/>
-        <Footer/>
+        <Adventure/>
+        <Success/>
+        <EventSection/>
+        <Teachers/>
+        <NewsSection/>
     </React.Fragment>
   )
 }

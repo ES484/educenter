@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,KAAK,CAAC,CAAC,CACP;EACI,KAAK,ECDc,OAAO;EDE1B,eAAe,EAAE,IAAI;EACrB,WAAW,EAAE,IAAI;CACpB",
+    "sources": [
+        "News.module.scss",
+        "../mainStyles/_mainColors.scss"
+    ],
+    "names": [],
+    "file": "News.module.css"
+}

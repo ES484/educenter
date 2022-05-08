@@ -1,0 +1,22 @@
+@import '../mainStyles/mainColors';
+.aboutUsContent h2
+{
+    color: $secondary-text-color;
+    text-transform: uppercase;
+    font-size: 2.5rem
+}
+.aboutUsContent p
+{
+    color: $main-text-color;
+}
+.counter
+{
+    background-color: $main-color;
+    color: #FFF;
+    text-align: center;
+}
+.counter h5
+{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
