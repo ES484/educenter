@@ -50,7 +50,7 @@ function App() {
     }
   }
   return (
-    <div className='w-100'>
+    <>
       <FirstNavbar userData={userData} logOut={logOut}/>
       <Carousel userData={userData}/>
     <Routes>
@@ -69,7 +69,7 @@ function App() {
       <Route path='login' element={<Login getUserData={getUserData}/>}/>
     </Routes>
     <Footer userData={userData}/>
-    </div>
+    </>
   );
 }
 
