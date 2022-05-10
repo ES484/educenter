@@ -26,7 +26,6 @@ async function submitRegister (e)
   e.preventDefault();
   setIsLoading(true);
   let validationResult = validateRegisterForm(user);
-  console.log(validationResult);
   if(validationResult.error)
   {
     setIsLoading(false);
@@ -65,7 +64,7 @@ function validateRegisterForm(user)
     {errorList.map((error, index)=> {
       if(error.message.includes("password"))
       {
-        return <div key={index} className='alert alert-danger'>Password invalid</div>
+        return <div key={index} className='alert alert-danger'>Password invalid: "Password must be starts with Capital letter, letters must be greater than 3 letters and less than 8 letters"</div>
       }
       else{
     return <div key={index} className='alert alert-danger'>{error.message}</div>

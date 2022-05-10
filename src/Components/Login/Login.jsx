@@ -61,7 +61,7 @@ function validateLoginForm(user)
     {errorList.map((error, index)=> {
       if(error.message.includes("password"))
       {
-        return <div key={index} className='alert alert-danger'>Password invalid</div>
+        return <div key={index} className='alert alert-danger'>Password invalid: "Password must be starts with Capital letter, letters must be greater than 3 letters and less than 8 letters"</div>
       }
       else{
     return <div key={index} className='alert alert-danger'>{error.message}</div>
