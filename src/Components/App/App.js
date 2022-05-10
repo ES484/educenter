@@ -54,8 +54,8 @@ function App() {
       <FirstNavbar userData={userData} logOut={logOut}/>
       <Carousel userData={userData}/>
     <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='home' element={<ProtectedRoute><Home/></ProtectedRoute>}/>
+      <Route path='/' element={<ProtectedRoute><Home/></ProtectedRoute>}/>
+      <Route path='home' element={<ProtectedRoute><Home/>}/>
       <Route path='notice' element={<Notice/>}/>
       <Route path='research' element={<Research/>}/>
       <Route path='scholarship' element={<Scholarship/>}/>
