@@ -75,7 +75,7 @@ function validateLoginForm(user)
       </div>
       <div className='input-gp my-3'>
         <label htmlFor='password'>Password</label>
-        <input onChange={getUser} className='form-control my-2' name='password' type='password'></input>
+        <input onChange={getUser} className='form-control my-2' name='password' type='password' placeholder='Password must be starts with Capital letter, letters must be greater than 3 letters and less than 8 letters'></input>
       </div>
       <button className='loginBtn'>{isLoading?<i className='fas fa-spinner'></i>: 'Login'}</button>
      </form>
